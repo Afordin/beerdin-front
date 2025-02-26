@@ -50,8 +50,8 @@ Verbs:
 - remove
 - ci (For ci/cd changes)
 - perf (performance the app)
-- add (install a new depency or files what are not a feature of the project like a readme)
-- update (update dependecies or files what are not a feature of the project like a readme)
+- add (install a new depency or files, prefer 'feat' if you are adding a feature)
+- update (update dependecies or files, prefer 'refactor' if you are refactoring a feature)
 
 Message:
 
