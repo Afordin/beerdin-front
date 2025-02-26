@@ -36,7 +36,7 @@ Currently, two official plugins are available:
 5. **Stage the changed files:** by using git-add to incrementally "add" changes to the index before using the commit command (`git add <file>`).
 6. **Record changes to the repository:** Create a new commit containing the current contents of the index and the given log message describing the changes(`git commit -m 'feat: some feature'`).
 
-*Some commit verbs and message good practices:*
+_Some commit verbs and message good practices:_
 
 Verbs:
 
@@ -74,10 +74,10 @@ export default tseslint.config({
     // other options...
     parserOptions: {
       project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+      tsconfigRootDir: import.meta.dirname
+    }
+  }
+});
 ```
 
 - Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
@@ -86,20 +86,20 @@ export default tseslint.config({
 
 ```js
 // eslint.config.js
-import react from 'eslint-plugin-react'
+import react from 'eslint-plugin-react';
 
 export default tseslint.config({
   // Set the react version
   settings: { react: { version: '18.3' } },
   plugins: {
     // Add the react plugin
-    react,
+    react
   },
   rules: {
     // other rules...
     // Enable its recommended rules
     ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+    ...react.configs['jsx-runtime'].rules
+  }
+});
 ```
