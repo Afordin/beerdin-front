@@ -1,18 +1,46 @@
-# React + TypeScript + Vite 
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌐 Afordin Web Stats
+  
+![GitHub stars](https://img.shields.io/github/stars/Afordin/beerdin-front?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Afordin/beerdin-front?style=social)
+![GitHub issues](https://img.shields.io/github/issues/Afordin/beerdin-front)
+![Contributors](https://img.shields.io/github/contributors/Afordin/beerdin-front)
 
-Currently, two official plugins are available:
+A dynamic dashboard showcasing key metrics of the Comuafor Discord community to track engagement and activity! 📊
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Figma Design
+](https://www.figma.com/design/bJtuMCSitvEhSugW4mQZsW/afordin-web-stats?node-id=33-153&p=f&t=9smQhS85vKfprhe1-0/Variety-Designs?type=design&node-id=1203-960&mode=design&t=MtKYUyZD2jwNeTxp-0) · [Report a bug](https://github.com/Afordin/beerdin-front/issues)
 
-## Getting started
+</div>
+
+
+## 📚 Table of Contents
+
+- [🌐 Afordin Web Stats](#-afordin-web-stats)
+- [📚 Table of Contents](#-table-of-contents)
+- [🌟 Features](#-features)
+- [🚀 Getting Started](#-getting-started)
+  - [📦 Building for Production](#-building-for-production)
+  - [🔍 Preview Production Build](#-preview-production-build)
+- [🤝 Contributing to a project](#-contributing-to-a-project)
+- [🔧 Expanding the ESLint configuration](#expanding-the-eslint-configuration)
+- 👥 [Authors](#-authors)
+- 🛠️ [Stack](#-authors)
+
+## 🌟 Features
+
+- 📊 Interactive dashboard displaying key server metrics
+- 💬 Track message counts, active users, and popular channels
+- ⏰ Identify peak activity hours and engagement trends
+- 🏆 View user leaderboards and most-used reactions
+
+## 🚀 Getting Started
 
 1. clone or fork this repository
 
    ```sh
-   git clone https://github.com/Afordin/hackafor-2.git
+   git clone https://github.com/Afordin/beerdin-front.gitt
    ```
 
 2. install dependencies
@@ -25,8 +53,25 @@ Currently, two official plugins are available:
    ```bash
    pnpm run dev
    ```
+### 📦 Building for Production
 
-## Contributing to a project
+To create a production-ready build:
+
+```shellscript
+# Using pnpm
+pnpm build
+```
+
+### 🔍 Preview Production Build
+
+To preview the production build locally:
+
+```shellscript
+# Using pnpm
+pnpm preview
+```
+
+## 🤝 Contributing to a project
 
 1. **Cloning a fork:**
    Click on the [_fork_](https://github.com/Afordin/beerdin-front/fork) button at the top right corner of the repository to create a copy of the project in your GitHub account.
@@ -103,3 +148,21 @@ export default tseslint.config({
   }
 });
 ```
+
+---
+
+## 👥 Authors
+
+<a href="https://github.com/afordigital">
+   <img width="50px" src="https://avatars.githubusercontent.com/u/43246362?v=4" />
+</a>
+
+**Thanks to all the contributors who have made this project possible!**
+
+[![Contributors](https://contrib.rocks/image?repo=Afordin/beerdin-front)](https://github.com/Afordin/beerdin-front/graphs/contributors)
+
+## 🛠️ Stack
+
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) <img src= "https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"> ![SHADCN](https://img.shields.io/badge/shadcn/ui-000000?style=for-the-badge&logo=shadcn/ui&logoColor=white)
+
+Made with ❤️ by [comuafor 🐀](https://discord.com/invite/comuafor)
