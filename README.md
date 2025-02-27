@@ -160,6 +160,8 @@ export default tseslint.config({
 **Thanks to all the contributors who have made this project possible!**
 
 [![Contributors](https://contrib.rocks/image?repo=Afordin/beerdin-front)](https://github.com/Afordin/beerdin-front/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=Afordin/beerdin)](https://github.com/Afordin/beerdin/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=Afordin/beerdin-api)](https://github.com/Afordin/beerdin-api/graphs/contributors)
 
 ## 🛠️ Stack
 
