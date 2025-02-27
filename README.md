@@ -18,15 +18,15 @@ A dynamic dashboard showcasing key metrics of the Comuafor Discord community to 
 ## 📚 Table of Contents
 
 - [🌐 Afordin Web Stats](#-afordin-web-stats)
-- [📚 Table of Contents](#-table-of-contents)
-- [🌟 Features](#-features)
-- [🚀 Getting Started](#-getting-started)
-  - [📦 Building for Production](#-building-for-production)
-  - [🔍 Preview Production Build](#-preview-production-build)
-- [🤝 Contributing to a project](#-contributing-to-a-project)
-- [🔧 Expanding the ESLint configuration](#expanding-the-eslint-configuration)
-- 👥 [Authors](#-authors)
-- 🛠️ [Stack](#-authors)
+  - [📚 Table of Contents](#-table-of-contents)
+  - [🌟 Features](#-features)
+  - [🚀 Getting Started](#-getting-started)
+    - [📦 Building for Production](#-building-for-production)
+    - [🔍 Preview Production Build](#-preview-production-build)
+  - [🤝 Contributing to a project](#-contributing-to-a-project)
+  - [Expanding the ESLint configuration](#expanding-the-eslint-configuration)
+  - [👥 Authors](#-authors)
+  - [🛠️ Stack](#️-stack)
 
 ## 🌟 Features
 
@@ -49,10 +49,17 @@ A dynamic dashboard showcasing key metrics of the Comuafor Discord community to 
    pnpm install
    ```
 
-3. run the project
+3. install husky hooks
+
+   ```bash
+   pnpm prepare
+   ```
+
+4. run the project
    ```bash
    pnpm run dev
    ```
+
 ### 📦 Building for Production
 
 To create a production-ready build:
