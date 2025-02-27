@@ -23,7 +23,8 @@ A dynamic dashboard showcasing key metrics of the Comuafor Discord community to 
 - [🚀 Getting Started](#-getting-started)
   - [📦 Building for Production](#-building-for-production)
   - [🔍 Preview Production Build](#-preview-production-build)
-- [🤝 Contributing](#-contributing)
+- [🤝 Contributing to a project](#-contributing-to-a-project)
+- [🔧 Expanding the ESLint configuration](#expanding-the-eslint-configuration)
 - 👥 [Authors](#-authors)
 - 🛠️ [Stack](#-authors)
 
@@ -36,66 +37,29 @@ A dynamic dashboard showcasing key metrics of the Comuafor Discord community to 
 
 ## 🚀 Getting Started
 
-To get a local copy up and running, follow these simple steps:
+1. clone or fork this repository
 
-1. Clone the repository
+   ```sh
+   git clone https://github.com/Afordin/beerdin-front.gitt
+   ```
 
-```shellscript
-git clone https://github.com/Afordin/beerdin-front.git
-```
+2. install dependencies
 
-2. Install dependencies
+   ```bash
+   pnpm install
+   ```
 
-Choose your preferred package manager:
-
-```shellscript
-# Using npm
-npm install
-
-# Using yarn
-yarn install
-
-# Using pnpm
-pnpm install
-
-# Using bun
-bun install
-```
-
-3. Start the development server
-
-```shellscript
-# Using npm
-npm run dev
-
-# Using yarn
-yarn dev
-
-# Using pnpm
-pnpm dev
-
-# Using bun
-bun run dev
-```
-
-4. Open your browser and visit [http://localhost:5173 🌺](http://localhost:5173)
-
+3. run the project
+   ```bash
+   pnpm run dev
+   ```
 ### 📦 Building for Production
 
 To create a production-ready build:
 
 ```shellscript
-# Using npm
-npm run build
-
-# Using yarn
-yarn build
-
 # Using pnpm
 pnpm build
-
-# Using bun
-bun run build
 ```
 
 ### 🔍 Preview Production Build
@@ -103,24 +67,11 @@ bun run build
 To preview the production build locally:
 
 ```shellscript
-# Using npm
-npm run preview
-
-# Using yarn
-yarn preview
-
 # Using pnpm
 pnpm preview
-
-# Using bun
-bun run preview
 ```
 
-Remember to adjust the port number if your configuration uses a different port than the default **5173**.
-
-## 🤝 Contributing
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+## 🤝 Contributing to a project
 
 1. **Cloning a fork:**
    Click on the [_fork_](https://github.com/Afordin/beerdin-front/fork) button at the top right corner of the repository to create a copy of the project in your GitHub account.
@@ -128,9 +79,75 @@ Contributions are what make the open-source community such an amazing place to l
 3. **Set upstream branch:** To keep your forked repository updated with the original repository, use the command (`git remote add upstream <repository original URL>`).
 4. **Create branch:** (`git checkout -b feature/some-feature`).
 5. **Stage the changed files:** by using git-add to incrementally "add" changes to the index before using the commit command (`git add <file>`).
-6. **Record changes to the repository:** Create a new commit containing the current contents of the index and the given log message describing the changes(`git commit -m 'Add: some feature'`).
+6. **Record changes to the repository:** Create a new commit containing the current contents of the index and the given log message describing the changes(`git commit -m 'feat: some feature'`).
+
+_Some commit verbs and message good practices:_
+
+Verbs:
+
+- feat (feature)
+- fix (bug fix)
+- docs (documentation)
+- style (formatting, missing semi colons, …)
+- refactor
+- test (when adding missing tests)
+- hotfix
+- remove
+- ci (For ci/cd changes)
+- perf (performance the app)
+- add (install a new depency or files, prefer 'feat' if you are adding a feature)
+- update (update dependecies or files, prefer 'refactor' if you are refactoring a feature)
+
+Message:
+
+- just as in use imperative, present tense: “change” not “changed” nor “changes”
+- don't capitalize first letter
+- no dot (.) at the end
+
 7. **Submit your Contribution:** Upload your branch with the changes to forked repository on GitHub using (`git push origin feature/some-feature`).
 8. **Generate a request:** To complete the process of creating your PR, simply hit [_pull request_](https://github.com/Afordin/beerdin-front/pulls)
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+
+- Configure the top-level `parserOptions` property like this:
+
+```js
+export default tseslint.config({
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname
+    }
+  }
+});
+```
+
+- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
+- Optionally add `...tseslint.configs.stylisticTypeChecked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+
+```js
+// eslint.config.js
+import react from 'eslint-plugin-react';
+
+export default tseslint.config({
+  // Set the react version
+  settings: { react: { version: '18.3' } },
+  plugins: {
+    // Add the react plugin
+    react
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended rules
+    ...react.configs.recommended.rules,
+    ...react.configs['jsx-runtime'].rules
+  }
+});
+```
 
 ---
 
@@ -143,6 +160,8 @@ Contributions are what make the open-source community such an amazing place to l
 **Thanks to all the contributors who have made this project possible!**
 
 [![Contributors](https://contrib.rocks/image?repo=Afordin/beerdin-front)](https://github.com/Afordin/beerdin-front/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=Afordin/beerdin)](https://github.com/Afordin/beerdin/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=Afordin/beerdin-api)](https://github.com/Afordin/beerdin-api/graphs/contributors)
 
 ## 🛠️ Stack
 
