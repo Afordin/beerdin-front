@@ -1,7 +1,7 @@
 <div align="center">
 
 # 🌐 Afordin Web Stats
-  
+
 ![GitHub stars](https://img.shields.io/github/stars/Afordin/beerdin-front?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/Afordin/beerdin-front?style=social)
 ![GitHub issues](https://img.shields.io/github/issues/Afordin/beerdin-front)
@@ -13,7 +13,6 @@ A dynamic dashboard showcasing key metrics of the Comuafor Discord community to 
 ](https://www.figma.com/design/bJtuMCSitvEhSugW4mQZsW/afordin-web-stats?node-id=33-153&p=f&t=9smQhS85vKfprhe1-0/Variety-Designs?type=design&node-id=1203-960&mode=design&t=MtKYUyZD2jwNeTxp-0) · [Report a bug](https://github.com/Afordin/beerdin-front/issues)
 
 </div>
-
 
 ## 📚 Table of Contents
 
