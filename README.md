@@ -1,7 +1,7 @@
 <div align="center">
 
 # 🌐 Afordin Web Stats
-  
+
 ![GitHub stars](https://img.shields.io/github/stars/Afordin/beerdin-front?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/Afordin/beerdin-front?style=social)
 ![GitHub issues](https://img.shields.io/github/issues/Afordin/beerdin-front)
@@ -14,19 +14,18 @@ A dynamic dashboard showcasing key metrics of the Comuafor Discord community to 
 
 </div>
 
-
 ## 📚 Table of Contents
 
 - [🌐 Afordin Web Stats](#-afordin-web-stats)
-- [📚 Table of Contents](#-table-of-contents)
-- [🌟 Features](#-features)
-- [🚀 Getting Started](#-getting-started)
-  - [📦 Building for Production](#-building-for-production)
-  - [🔍 Preview Production Build](#-preview-production-build)
-- [🤝 Contributing to a project](#-contributing-to-a-project)
-- [🔧 Expanding the ESLint configuration](#expanding-the-eslint-configuration)
-- 👥 [Authors](#-authors)
-- 🛠️ [Stack](#-authors)
+  - [📚 Table of Contents](#-table-of-contents)
+  - [🌟 Features](#-features)
+  - [🚀 Getting Started](#-getting-started)
+    - [📦 Building for Production](#-building-for-production)
+    - [🔍 Preview Production Build](#-preview-production-build)
+  - [🤝 Contributing to a project](#-contributing-to-a-project)
+  - [Expanding the ESLint configuration](#expanding-the-eslint-configuration)
+  - [👥 Authors](#-authors)
+  - [🛠️ Stack](#️-stack)
 
 ## 🌟 Features
 
@@ -49,10 +48,17 @@ A dynamic dashboard showcasing key metrics of the Comuafor Discord community to 
    pnpm install
    ```
 
-3. run the project
+3. install husky hooks
+
+   ```bash
+   pnpm prepare
+   ```
+
+4. run the project
    ```bash
    pnpm run dev
    ```
+
 ### 📦 Building for Production
 
 To create a production-ready build:
@@ -159,9 +165,14 @@ export default tseslint.config({
 
 **Thanks to all the contributors who have made this project possible!**
 
+### Frontend
+
 [![Contributors](https://contrib.rocks/image?repo=Afordin/beerdin-front)](https://github.com/Afordin/beerdin-front/graphs/contributors)
-[![Contributors](https://contrib.rocks/image?repo=Afordin/beerdin)](https://github.com/Afordin/beerdin/graphs/contributors)
+
+### Backend
+
 [![Contributors](https://contrib.rocks/image?repo=Afordin/beerdin-api)](https://github.com/Afordin/beerdin-api/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=Afordin/beerdin)](https://github.com/Afordin/beerdin/graphs/contributors)
 
 ## 🛠️ Stack
 
