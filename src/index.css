@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 212, 21%, 14%;
+    --card: 208, 16%, 16%;
+    --border: 208, 14%, 18%;
+    --subtitle: 216, 9%, 43%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+  }
+
+  body {
+    font-family: Roboto, Arial;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
