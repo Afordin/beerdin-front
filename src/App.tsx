@@ -1,13 +1,15 @@
 import './App.css';
 
 import { Navbar } from '@/components/Navbar/Navbar';
-import { Button } from './components/ui/button';
+import MessageByAuthorCard from './components/MessageByAuthorCard';
 
 function App() {
   return (
     <>
       <Navbar />
-      <Button>Bienvenido/a a beerdin!</Button>
+      <div className="mt-16 w-[480px]">
+        <MessageByAuthorCard />
+      </div>
     </>
   );
 }

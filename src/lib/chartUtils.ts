@@ -3,6 +3,12 @@
 export type ColorUtility = 'bg' | 'stroke' | 'fill' | 'text';
 
 export const chartColors = {
+  messageSent: {
+    bg: 'bg-[4D4DFF]',
+    stroke: 'stroke-blue-500',
+    fill: 'fill-blue-500',
+    text: 'text-white'
+  },
   blue: {
     bg: 'bg-blue-500',
     stroke: 'stroke-blue-500',
