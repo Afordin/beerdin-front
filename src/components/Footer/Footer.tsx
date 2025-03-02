@@ -59,8 +59,8 @@ const Footer = () => {
             <a href="https://www.twitch.tv/afor_digital" className="social-icon-link">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" className="social-icon-svg">
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M15.0001 12H17.4001V6H15.0001V12ZM9.0001 12H11.4001V6H9.0001V12ZM21.0001 13.5686V2.4H4.2001V16.8H9.0001V20.3438L12.0721 16.8H17.8081L21.0001 13.5686ZM17.2885 20.4H12.5917L9.4645 24H6.6001V20.4H0.600098V4.17598L2.1601 0H23.4001V14.6074L17.2885 20.4Z"
                   fill="currentColor"
                 />
