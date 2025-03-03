@@ -1,17 +1,16 @@
-import './App.css';
-
-import { Footer } from '@/components/Footer/Footer';
-import { Navbar } from '@/components/Navbar/Navbar';
 import MessageByAuthorCard from './components/MessageByAuthorCard';
+import { RootLayout } from './layouts/RootLayout/RootLayout';
+
+import './App.css';
 
 function App() {
   return (
     <>
-      <Navbar />
-      <div className="mt-16 w-[480px]">
-        <MessageByAuthorCard />
-      </div>
-      <Footer />
+      <RootLayout>
+        <div className="w-[480px]">
+          <MessageByAuthorCard />
+        </div>
+      </RootLayout>
     </>
   );
 }
