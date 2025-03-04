@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..900&family=Inter:wght@100..900&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -23,7 +21,7 @@
   }
 
   body {
-    font-family: 'Inter';
+    font-family: 'Inter Variable';
   }
 }
 
