@@ -2,8 +2,9 @@ import './App.css';
 
 import { Footer } from '@/components/Footer/Footer';
 import { Navbar } from '@/components/Navbar/Navbar';
-import { ChartCard, ChartType } from './components/ChartCard';
+import { ChartCard } from './components/ChartCard';
 import TopChannelsCard from './components/TopChannelsCard';
+import { ChartType } from './models/chart';
 
 function App() {
   return (
