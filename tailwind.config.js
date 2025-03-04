@@ -1,9 +1,15 @@
+const { ScanSearch } = require('lucide-react');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ['class'],
   content: ['./index.html', './src/**/*.{html,js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        dmSans: ['DM Sans']
+      },
+
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',

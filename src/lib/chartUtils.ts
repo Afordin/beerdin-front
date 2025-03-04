@@ -1,8 +1,22 @@
 // Tremor Raw chartColors [v0.1.0]
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 export type ColorUtility = 'bg' | 'stroke' | 'fill' | 'text';
 
 export const chartColors = {
+  pieChart1: {
+    bg: 'bg-[1814F3]',
+    stroke: 'stroke-[#1814F3]',
+    fill: 'fill-[#06B6D4]',
+    text: 'text-white'
+  },
+
+  peakHours: {
+    bg: 'bg-[1814F3]',
+    stroke: 'stroke-[#1814F3]',
+    fill: 'fill-[#1814F3]',
+    text: 'text-white'
+  },
   messageSent: {
     bg: 'bg-[4D4DFF]',
     stroke: 'stroke-blue-500',
@@ -102,15 +116,15 @@ export const getYAxisDomain = (autoMinValue: boolean, minValue: number | undefin
   return [minDomain, maxDomain];
 };
 
-// Tremor Raw hasOnlyOneValueForKey [v0.1.0]
+// Tremor hasOnlyOneValueForKey [v0.1.0]
 
-export function hasOnlyOneValueForKey(array: [], keyToCheck: string): boolean {
-  const val = [];
+export function hasOnlyOneValueForKey<T extends Record<string, any>>(array: T[], keyToCheck: string): boolean {
+  const values = new Set<any>();
 
   for (const obj of array) {
-    if (Object.prototype.hasOwnProperty.call(obj, keyToCheck)) {
-      val.push(obj[keyToCheck]);
-      if (val.length > 1) {
+    if (keyToCheck in obj) {
+      values.add(obj[keyToCheck]);
+      if (values.size > 1) {
         return false;
       }
     }
