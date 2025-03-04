@@ -8,7 +8,7 @@ interface RootLayoutProps {
 
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
-    <div className="w-full h-full min-h-screen grid grid-rows-[96px,1fr,auto] space-y-16 custom-bg">
+    <div className="w-full h-full min-h-screen grid grid-rows-[82px,1fr,auto] space-y-16 custom-bg">
       <div className="max-w-[1210px] w-full mx-auto mt-5 h-24">
         <Navbar />
       </div>
