@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        dmSans: ['DM Sans Variable']
+        dmSans: ['DM Sans']
       },
 
       borderRadius: {

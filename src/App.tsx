@@ -1,6 +1,4 @@
 import './App.css';
-import '@fontsource-variable/inter';
-import '@fontsource-variable/dm-sans';
 
 import { Footer } from '@/components/Footer/Footer';
 import { Navbar } from '@/components/Navbar/Navbar';
