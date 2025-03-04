@@ -11,6 +11,7 @@ type Bar<T> = T & {
 };
 
 interface BarListProps<T = unknown> extends React.HTMLAttributes<HTMLDivElement> {
+  customStyle?: CustomStyle;
   data: Bar<T>[];
   valueFormatter?: (value: number) => string;
   showAnimation?: boolean;
@@ -18,14 +19,25 @@ interface BarListProps<T = unknown> extends React.HTMLAttributes<HTMLDivElement>
   sortOrder?: 'ascending' | 'descending' | 'none';
 }
 
+interface CustomStyle {
+  bgStyleCustom: string;
+  textStyleCustom: string;
+  valueStyleCustom: string;
+  hasIcon: boolean;
+  urlIcon?: string;
+}
 //CustomStyles for the Chart
 
-const bgStyleCustom = ' bg-[#4D4DFF] dark:bg-[#2E2E8A]';
-const textStyleCustom = 'text-white font-semibold text-sm';
-const valueStyleCustom = 'text-white  text-sm';
+const customStyleDefault: CustomStyle = {
+  bgStyleCustom: ' bg-[#CCCBFC] dark:bg-[#2E2E8A]',
+  textStyleCustom: 'text-[#374151] font-normal text-sm pl-1',
+  valueStyleCustom: 'text-[#374151]  text-sm',
+  hasIcon: false
+};
 
 function BarListInner<T>(
   {
+    customStyle,
     data = [],
     valueFormatter = (value) => value.toString(),
     showAnimation = false,
@@ -52,7 +64,7 @@ function BarListInner<T>(
   }, [sortedData]);
 
   const rowHeight = 'h-8';
-
+  customStyle = customStyle ?? customStyleDefault;
   return (
     <div
       ref={forwardedRef}
@@ -89,7 +101,7 @@ function BarListInner<T>(
                 rowHeight,
                 // background color
                 //'bg-blue-200 dark:bg-blue-900',
-                bgStyleCustom,
+                customStyle.bgStyleCustom,
 
                 onValueChange ? 'group-hover:bg-blue-300 group-hover:dark:bg-blue-800' : '',
                 // margin and duration
@@ -127,10 +139,10 @@ function BarListInner<T>(
                       'truncate whitespace-nowrap text-sm',
                       // text color
                       //   'text-gray-900 dark:text-gray-50'
-                      textStyleCustom
+                      customStyle.textStyleCustom
                     )}
                   >
-                    <img className="h-5 w-5 rounded-full inline-block mr-1 " src="discord.png" />
+                    {customStyle.hasIcon ?? <img className="h-5 w-5 rounded-full inline-block mr-1 " src={customStyle.urlIcon} />}
                     {item.name}
                   </p>
                 )}
@@ -151,7 +163,7 @@ function BarListInner<T>(
                 'truncate whitespace-nowrap text-sm leading-none',
                 // text color
                 // 'text-gray-900 dark:text-gray-50'
-                valueStyleCustom
+                customStyle.valueStyleCustom
               )}
             >
               {valueFormatter(item.value)}
