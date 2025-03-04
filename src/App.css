@@ -1,8 +1,13 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  height: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  width: 100%;
 }
 
 .social-icon {

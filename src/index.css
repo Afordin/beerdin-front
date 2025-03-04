@@ -23,6 +23,7 @@
   }
 
   body {
+    min-height: 100vh;
     font-family: 'Inter';
   }
 }
@@ -32,6 +33,26 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+  }
+}
+
+@layer utilities {
+  .custom-bg {
+    position: relative;
+  }
+
+  .custom-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    background-size: 20px 20px;
+    background-image: repeating-linear-gradient(to right, #E0E1E6, #E0E1E6 1px, #fff 1px, #fff);
+    opacity: 0.2;
+    z-index: -1; /* Push background behind content */
   }
 }
