@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { CircleX } from 'lucide-react';
-import { BarListData, lineChartData, pieChartData } from '@/constants/chartData';
+import { barChartData, BarListData, colorsPieChart, lineChartData, pieChartData } from '@/constants/chartData';
 import { ChartCardProps, ChartDataBarList, ChartType } from '@/models/chart';
+import { BarChart } from './Charts/BarChart';
 import { BarList } from './Charts/BarList';
 import { DonutChart } from './Charts/DonutChart';
 import { LineChart } from './Charts/LineChart';
@@ -20,6 +21,7 @@ export const ChartCard = ({ chartCardData }: ChartCardProps) => {
     if (chartCardData.chartType === ChartType.BarList) setChartData(BarListData);
     if (chartCardData.chartType === ChartType.LineChart) setChartData(lineChartData);
     if (chartCardData.chartType === ChartType.PieChart) setChartData(pieChartData);
+    if (chartCardData.chartType === ChartType.BarChart) setChartData(barChartData);
   }, [chartCardData.chartType]);
 
   return (
@@ -61,9 +63,34 @@ export const ChartCard = ({ chartCardData }: ChartCardProps) => {
             <BarList data={chartData} />
           </div>
         )}
-        {chartCardData.chartType === ChartType.PieChart && <DonutChart variant="pie" data={chartData} category="name" value="value" />}
-        {chartCardData.chartType === ChartType.LineChart && (
+        {response && chartCardData.chartType === ChartType.PieChart && (
+          <div className="flex gap-6 items-center  justify-center w-full">
+            <DonutChart
+              className="w-64 h-64"
+              variant="pie"
+              colors={['pieChart1', 'pieChart2', 'pieChart3', 'pieChart4', 'pieChart5', 'pieChart6']}
+              data={chartData}
+              category="name"
+              value="value"
+            />
+            <div className="flex flex-col gap-2">
+              {chartData.map((data, index) => (
+                <div key={index} className="flex items-center justify-between gap-2 text-xs text-black">
+                  <span className={`flex w-4 h-4 rounded-full ${colorsPieChart[index]}`}></span>
+                  <span>{data.name}</span>
+                  <span>{data.value}%</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {response && chartCardData.chartType === ChartType.LineChart && (
           <LineChart colors={['peakHours']} data={chartData} index="name" categories={['value']} />
+        )}
+
+        {chartCardData.chartType === ChartType.BarChart && (
+          <BarChart colors={['messageCount']} data={chartData} index="name" categories={['value']} />
         )}
       </CardContent>
     </Card>

@@ -223,6 +223,7 @@ const DonutChart = React.forwardRef<HTMLDivElement, DonutChartProps>(
               inactiveShape={renderInactiveShape}
               style={{ outline: 'none' }}
             />
+
             {showTooltip && (
               <Tooltip
                 wrapperStyle={{ outline: 'none' }}

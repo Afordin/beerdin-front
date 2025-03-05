@@ -1,7 +1,8 @@
 export enum ChartType {
   BarList = 'barList',
   LineChart = 'lineChart',
-  PieChart = 'pieChart'
+  PieChart = 'pieChart',
+  BarChart = 'barChart'
 }
 
 export interface ChartDataBarList {

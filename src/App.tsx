@@ -9,7 +9,18 @@ function App() {
   return (
     <>
       <RootLayout>
-        <div className="grid grid-cols-2 gap-x-6 gap-y-8">
+        <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-8 px-6 md:px-14 ">
+          <div className="col-span-1 lg:col-span-2 w-full">
+            <ChartCard
+              chartCardData={{
+                title: 'Message count',
+                subTitle: 'Displays the number of messages sent on the server during a period of time. ',
+                urlEndpoint: 'test',
+                chartType: ChartType.BarChart
+              }}
+            />
+          </div>
+
           <TopChannelsCard />
           <ChartCard
             chartCardData={{

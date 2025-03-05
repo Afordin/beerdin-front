@@ -70,3 +70,36 @@ export const pieChartData = [
     value: 7
   }
 ];
+
+export const barChartData = [
+  {
+    name: 'Feb 17',
+    value: 2500
+  },
+  {
+    name: 'Feb 18',
+    value: 1300
+  },
+  {
+    name: 'Feb 19',
+    value: 680
+  },
+  {
+    name: 'Feb 20',
+    value: 500
+  },
+  {
+    name: 'Feb 21',
+    value: 300
+  },
+  {
+    name: 'Feb 22',
+    value: 300
+  },
+  {
+    name: 'Feb 23',
+    value: 300
+  }
+];
+
+export const colorsPieChart = ['bg-cyanCustom', 'bg-skyCustom', 'bg-blueCustom', 'bg-indigoCustom', 'bg-violetCustom', 'bg-purpleCustom'];
