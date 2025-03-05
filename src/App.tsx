@@ -47,6 +47,15 @@ function App() {
               chartType: ChartType.BarList
             }}
           />
+
+          <ChartCard
+            chartCardData={{
+              urlEndpoint: 'test',
+              title: 'User leaderboard',
+              subTitle: 'Lists the most outstanding users according to their participation in the server.',
+              chartType: ChartType.Table
+            }}
+          />
         </div>
       </RootLayout>
     </>

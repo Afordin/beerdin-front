@@ -103,3 +103,49 @@ export const barChartData = [
 ];
 
 export const colorsPieChart = ['bg-cyanCustom', 'bg-skyCustom', 'bg-blueCustom', 'bg-indigoCustom', 'bg-violetCustom', 'bg-purpleCustom'];
+
+export const tableChartData = [
+  {
+    ranking: 1,
+    user: '@AforPagame',
+    level: 23,
+    messages: 237,
+    reactions: 0
+  },
+  {
+    ranking: 2,
+    user: '@AforNoReviso',
+    level: 22,
+    messages: 237,
+    reactions: 0
+  },
+  {
+    ranking: 2,
+    user: '@AforPonCapibaras',
+    level: 5,
+    messages: 237,
+    reactions: 0
+  },
+  {
+    ranking: 2,
+    user: '@Afor',
+    level: 4,
+    messages: 237,
+    reactions: 0
+  },
+  {
+    ranking: 2,
+    user: '@Afor',
+    level: 2,
+    messages: 237,
+    reactions: 0
+  }
+];
+
+export const placeIcons = {
+  0: '/icons/first_place.png',
+  1: '/icons/second_place.png',
+  2: '/icons/third_place.png',
+  3: '/icons/fourth_place.png',
+  4: '/icons/fifth_place.png'
+};
