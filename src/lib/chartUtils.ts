@@ -4,21 +4,56 @@
 export type ColorUtility = 'bg' | 'stroke' | 'fill' | 'text';
 
 export const chartColors = {
-  pieChart1: {
-    bg: 'bg-[1814F3]',
-    stroke: 'stroke-[#1814F3]',
-    fill: 'fill-[#06B6D4]',
+  messageCount: {
+    bg: 'bg-[#7F7CF8]',
+    stroke: 'stroke-[#7F7CF8]',
+    fill: 'fill-[#7F7CF8]',
     text: 'text-white'
   },
-
+  pieChart1: {
+    bg: 'bg-cyanCustom',
+    stroke: 'stroke-[#1814F3]',
+    fill: 'fill-cyanCustom',
+    text: 'text-white'
+  },
+  pieChart2: {
+    bg: 'bg-skyCustom',
+    stroke: 'stroke-[#1814F3]',
+    fill: 'fill-skyCustom',
+    text: 'text-white'
+  },
+  pieChart3: {
+    bg: 'bg-blueCustom',
+    stroke: 'stroke-[#1814F3]',
+    fill: 'fill-blueCustom',
+    text: 'text-white'
+  },
+  pieChart4: {
+    bg: 'bg-indigoCustom',
+    stroke: 'stroke-[#1814F3]',
+    fill: 'fill-indigoCustom',
+    text: 'text-white'
+  },
+  pieChart5: {
+    bg: 'bg-violetCustom',
+    stroke: 'stroke-[#1814F3]',
+    fill: 'fill-violetCustom',
+    text: 'text-white'
+  },
+  pieChart6: {
+    bg: 'bg-purpleCustom',
+    stroke: 'stroke-[#1814F3]',
+    fill: 'fill-purpleCustom',
+    text: 'text-white'
+  },
   peakHours: {
-    bg: 'bg-[1814F3]',
+    bg: 'bg-[#1814F3]',
     stroke: 'stroke-[#1814F3]',
     fill: 'fill-[#1814F3]',
     text: 'text-white'
   },
   messageSent: {
-    bg: 'bg-[4D4DFF]',
+    bg: 'bg-[#4D4DFF]',
     stroke: 'stroke-blue-500',
     fill: 'fill-blue-500',
     text: 'text-white'
