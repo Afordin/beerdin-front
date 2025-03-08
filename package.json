@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "format": "prettier --check \"**/*.{js,cjs,mjs,ts,tsx,md,json}\"",
-    "format:fix": "prettier --write \"**/*.{js,cjs,mjs,ts,tsx,md,mdx,json}\"",
+    "format": "prettier --check \"**/*.{js,jsx,mjs,ts,tsx,json}\"",
+    "format:fix": "prettier --write \"**/*.{js,jsx,mjs,ts,tsx,json}\"",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "preview": "vite preview",
@@ -52,9 +52,9 @@
     "vite": "^6.1.0"
   },
   "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": [
+    "**/*.{js,jsx,mjs,ts,tsx,json}": [
       "npx eslint --fix",
-      "npx prettier --find-config-path  --write"
+      "npx prettier --write"
     ]
   }
 }
