@@ -43,7 +43,7 @@
   }
 
   .custom-bg::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -51,7 +51,7 @@
     height: 100%;
     background-color: #fff;
     background-size: 20px 20px;
-    background-image: repeating-linear-gradient(to right, #E0E1E6, #E0E1E6 1px, #fff 1px, #fff);
+    background-image: repeating-linear-gradient(to right, #e0e1e6, #e0e1e6 1px, #fff 1px, #fff);
     opacity: 0.2;
     z-index: -1; /* Push background behind content */
   }
