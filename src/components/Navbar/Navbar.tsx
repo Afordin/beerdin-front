@@ -4,7 +4,7 @@ const Navbar = () => {
   const navItems = ['Messages', 'Activity', 'Users', 'Usage', 'Words'];
 
   return (
-    <nav className="relative w-full mx-auto bg-white px-10 py-3 border border-cs-slate-300 rounded-full flex justify-between items-center z-50">
+    <nav className="w-full mx-auto bg-white px-10 py-3 border border-cs-slate-300 rounded-full flex justify-between items-center z-50">
       <a href="#" className="flex items-center space-x-2 h-full">
         <svg width="16" height="20" viewBox="0 0 196 256" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
