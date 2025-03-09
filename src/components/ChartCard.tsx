@@ -49,7 +49,6 @@ export const ChartCard = ({ chartCardData }: ChartCardProps) => {
           <SelectContent className="text-cs-slate-900">
             <SelectGroup className="bg-background">
               <SelectItem value="Last month">Last month</SelectItem>
-              <SelectItem value="Last 3 months">Last 3 months</SelectItem>
               <SelectItem value="Last 6 months">Last 3 months</SelectItem>
               <SelectItem value="Last year">Last year</SelectItem>
             </SelectGroup>
@@ -66,7 +65,7 @@ export const ChartCard = ({ chartCardData }: ChartCardProps) => {
         )}
 
         {response && chartCardData.chartType === ChartType.BarList && (
-          <div>
+          <div className="w-full">
             <div className="space-x-2 text-left pb-6 pt-3">
               <span className="text-[#374151] text-3xl font-semibold">10,234</span>
               <span className="text-sm font-normal text-cs-slate-700 ">Total messages</span>

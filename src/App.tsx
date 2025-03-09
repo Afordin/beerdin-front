@@ -42,18 +42,28 @@ function App() {
 
           <ChartCard
             chartCardData={{
-              title: 'Top Channels',
-              subTitle: 'Highlights the channels with the highest activity based on the number of messages sent.',
-              chartType: ChartType.BarList
+              urlEndpoint: 'test',
+              title: 'User leaderboard',
+              subTitle: 'Lists the most outstanding users according to their participation in the server.',
+              chartType: ChartType.Table
+            }}
+          />
+
+          <ChartCard
+            chartCardData={{
+              title: 'Top users',
+              subTitle: 'Displays the number of messages sent on the server during a period of time. ',
+              urlEndpoint: 'test',
+              chartType: ChartType.BarChart
             }}
           />
 
           <ChartCard
             chartCardData={{
               urlEndpoint: 'test',
-              title: 'User leaderboard',
-              subTitle: 'Lists the most outstanding users according to their participation in the server.',
-              chartType: ChartType.Table
+              title: 'Top reactions',
+              subTitle: 'It presents the most frequently used reactions in the server messages.',
+              chartType: ChartType.BarList
             }}
           />
         </div>
