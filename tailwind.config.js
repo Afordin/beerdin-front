@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        dmSans: ['DM Sans', ...defaultTheme.fontFamily.sans],
-        inter: ['Inter', ...defaultTheme.fontFamily.sans]
+        inter: ['Inter', ...defaultTheme.fontFamily.sans],
+        dmSans: ['DMSans', ...defaultTheme.fontFamily.sans]
       },
       borderRadius: {
         lg: 'var(--radius)',

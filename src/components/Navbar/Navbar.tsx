@@ -4,7 +4,7 @@ const Navbar = () => {
   const navItems = ['Messages', 'Activity', 'Users', 'Usage', 'Words'];
 
   return (
-    <nav className="fixed max-w-[1210px] mx-auto bg-white px-10 py-3 border border-cs-slate-300 w-full rounded-full flex justify-between items-center z-50">
+    <nav className="relative w-full mx-auto bg-white px-10 py-3 border border-cs-slate-300 rounded-full flex justify-between items-center z-50">
       <a href="#" className="flex items-center space-x-2 h-full">
         <svg width="16" height="20" viewBox="0 0 196 256" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -19,12 +19,12 @@ const Navbar = () => {
         <p className="text-cs-slate-900 text-base font-semibold">Comuafor</p>
       </a>
       <div className="flex items-center space-x-3">
-        <ul className="flex items-center space-x-4 text-cs-slate-800">
+        <ul className="flex items-center space-x-3 text-cs-slate-800">
           {navItems.map((item) => (
             <li key={item}>
               <a
                 href={`#${item.toLowerCase()}`}
-                className="relative cursor-pointer text-sm hover:text-primary-900 transition-colors duration-300 
+                className="relative cursor-pointer font-medium text-sm hover:text-primary-900 transition-colors duration-300 
              after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] 
              after:bg-primary-900 after:transition-all after:duration-300 after:ease-in-out 
              hover:after:w-full"
