@@ -1,100 +1,100 @@
 #root {
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  height: 100%;
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  padding: 0;
-  width: 100%;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+	height: 100%;
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+	padding: 0;
+	width: 100%;
 }
 
 .social-icon {
-  @apply relative flex justify-center items-center 
+	@apply relative flex justify-center items-center 
          border border-cs-slate-700 rounded-full w-10 h-10 
          cursor-pointer overflow-hidden transition-colors duration-300 
          hover:text-white;
 }
 
 .social-icon-link {
-  @apply flex justify-center items-center w-full h-full 
+	@apply flex justify-center items-center w-full h-full 
          rounded-full relative z-10;
 }
 
 .social-icon-svg {
-  @apply text-text-primary transition-colors duration-300 
+	@apply text-text-primary transition-colors duration-300 
          group-hover:text-white;
 }
 
 .social-icon-bg {
-  @apply absolute inset-0;
+	@apply absolute inset-0;
 }
 
 .social-icon-bg div {
-  @apply absolute top-0 h-full bg-text-primary w-0 transition-all duration-500;
+	@apply absolute top-0 h-full bg-text-primary w-0 transition-all duration-500;
 }
 
 .social-icon-bg div:first-child {
-  @apply left-0 group-hover:w-1/2;
+	@apply left-0 group-hover:w-1/2;
 }
 
 .social-icon-bg div:last-child {
-  @apply right-0 group-hover:w-1/2;
+	@apply right-0 group-hover:w-1/2;
 }
 
 .primary-button {
-  @apply relative overflow-hidden bg-cs-slate-900 text-white rounded-[8px] hover:bg-[#2F2F31] hover:text-text-primary transition-colors duration-300;
+	@apply relative overflow-hidden bg-cs-slate-900 text-white rounded-[8px] hover:bg-[#2F2F31] hover:text-text-primary transition-colors duration-300;
 }
 
 .primary-button-link {
-  @apply flex items-center space-x-2 relative z-10;
+	@apply flex items-center space-x-2 relative z-10;
 }
 
 .primary-button-svg {
-  @apply text-white transition-colors duration-300 group-hover:text-text-primary;
+	@apply text-white transition-colors duration-300 group-hover:text-text-primary;
 }
 
 .primary-button-bg {
-  @apply absolute inset-0 flex justify-center items-center;
+	@apply absolute inset-0 flex justify-center items-center;
 }
 
 .primary-button-bg div {
-  @apply w-0 h-0 bg-white rounded-full transition-all duration-500 group-hover:w-32 group-hover:h-32;
+	@apply w-0 h-0 bg-white rounded-full transition-all duration-500 group-hover:w-32 group-hover:h-32;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+	height: 6em;
+	padding: 1.5em;
+	will-change: filter;
+	transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+	filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+	filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+	a:nth-of-type(2) .logo {
+		animation: logo-spin infinite 20s linear;
+	}
 }
 
 .card {
-  padding: 2em;
+	padding: 2em;
 }
 
 .read-the-docs {
-  color: #888;
+	color: #888;
 }
