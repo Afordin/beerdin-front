@@ -37,6 +37,7 @@
 
 	body {
 		min-height: 100vh;
+		/* biome-ignore lint/a11y/useGenericFontNames: <explanation> */
 		font-family: "Inter";
 	}
 }

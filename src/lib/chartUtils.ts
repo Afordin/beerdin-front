@@ -162,10 +162,12 @@ export const getYAxisDomain = (
 
 // Tremor hasOnlyOneValueForKey [v0.1.0]
 
+// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 export function hasOnlyOneValueForKey<T extends Record<string, any>>(
 	array: T[],
 	keyToCheck: string,
 ): boolean {
+	// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 	const values = new Set<any>();
 
 	for (const obj of array) {

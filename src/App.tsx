@@ -33,6 +33,7 @@ function App() {
 									href="https://discord.com/invite/comuafor"
 									className="primary-button-link"
 								>
+									{/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
 									<svg
 										viewBox="0 0 256 199"
 										width="20"
@@ -58,6 +59,7 @@ function App() {
 									href="https://discord.com/invite/comuafor"
 									className="primary-button-link"
 								>
+									{/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
 									<svg
 										viewBox="0 0 256 199"
 										width="20"

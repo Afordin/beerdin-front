@@ -125,6 +125,7 @@ export const ChartCard = ({ chartCardData }: ChartCardProps) => {
 						<div className="flex flex-col gap-2">
 							{(chartData as ChartData[]).map((data, index) => (
 								<div
+									// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 									key={index}
 									className="flex items-center justify-between gap-2 text-xs text-black"
 								>
@@ -181,6 +182,7 @@ export const ChartCard = ({ chartCardData }: ChartCardProps) => {
 						</thead>
 						<tbody className=" divide-y divide-white">
 							{(chartData as TableChart[]).map((data, index) => (
+								// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 								<tr className="text-cs-slate-800 text-sm" key={index}>
 									<td className="px-3 py-3 whitespace-nowrap">
 										{placeIcons[index] && (
