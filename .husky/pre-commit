@@ -1,1 +1,1 @@
-npx lint-stagedgit
+npx lint-staged
