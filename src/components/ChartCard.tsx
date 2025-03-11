@@ -1,8 +1,6 @@
-import { useEffect, useState } from "react";
-import { CircleX } from "lucide-react";
 import {
-	barChartData,
 	BarListData,
+	barChartData,
 	colorsPieChart,
 	lineChartData,
 	pieChartData,
@@ -15,6 +13,8 @@ import {
 	ChartType,
 	type TableChart,
 } from "@/models/chart";
+import { CircleX } from "lucide-react";
+import { useEffect, useState } from "react";
 import { BarChart } from "./Charts/BarChart";
 import { BarList } from "./Charts/BarList";
 import { DonutChart } from "./Charts/DonutChart";

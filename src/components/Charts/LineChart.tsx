@@ -3,8 +3,18 @@
 
 "use client";
 
-import React from "react";
+import { useOnWindowResize } from "@/Hooks/useOnWindowResize";
+import {
+	AvailableChartColors,
+	type AvailableChartColorsKeys,
+	constructCategoryColors,
+	getColorClassName,
+	getYAxisDomain,
+	hasOnlyOneValueForKey,
+} from "@/lib/chartUtils";
+import { cx } from "@/lib/utils";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "@remixicon/react";
+import React from "react";
 import {
 	CartesianGrid,
 	Dot,
@@ -18,16 +28,6 @@ import {
 	YAxis,
 } from "recharts";
 import type { AxisDomain } from "recharts/types/util/types";
-import { useOnWindowResize } from "@/Hooks/useOnWindowResize";
-import {
-	AvailableChartColors,
-	type AvailableChartColorsKeys,
-	constructCategoryColors,
-	getColorClassName,
-	getYAxisDomain,
-	hasOnlyOneValueForKey,
-} from "@/lib/chartUtils";
-import { cx } from "@/lib/utils";
 
 //#region Legend
 

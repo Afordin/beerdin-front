@@ -3,6 +3,13 @@
 
 "use client";
 
+import {
+	AvailableChartColors,
+	type AvailableChartColorsKeys,
+	constructCategoryColors,
+	getColorClassName,
+} from "@/lib/chartUtils";
+import { cx } from "@/lib/utils";
 import React from "react";
 import {
 	Pie,
@@ -11,13 +18,6 @@ import {
 	Sector,
 	Tooltip,
 } from "recharts";
-import {
-	AvailableChartColors,
-	type AvailableChartColorsKeys,
-	constructCategoryColors,
-	getColorClassName,
-} from "@/lib/chartUtils";
-import { cx } from "@/lib/utils";
 
 const sumNumericArray = (arr: number[]): number =>
 	arr.reduce((sum, num) => sum + num, 0);

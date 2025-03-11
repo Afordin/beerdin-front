@@ -1,7 +1,7 @@
 // Tremor BarList [v0.1.1]
 
-import React from "react";
 import { cx, focusRing } from "@/lib/utils";
+import React from "react";
 
 type Bar<T> = T & {
 	key?: string;
