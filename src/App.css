@@ -67,7 +67,22 @@
 }
 
 .primary-button-bg div {
-  @apply w-0 h-0 bg-white rounded-full transition-all duration-500 group-hover:w-32 group-hover:h-32;
+  @apply w-0 h-0 bg-white rounded-full transition-all duration-700 group-hover:w-48 group-hover:h-48;
+}
+.secondary-button {
+  @apply relative overflow-hidden bg-white text-cs-slate-900 rounded-[8px] hover:bg-[#F2F2F2] hover:text-white transition-colors duration-300 border border-cs-slate-900;
+}
+.secondary-button-link {
+  @apply flex items-center space-x-2 relative z-10;
+}
+.secondary-button-svg {
+  @apply text-cs-slate-900 transition-colors duration-300 group-hover:text-white;
+}
+.secondary-button-bg {
+  @apply absolute inset-0 flex justify-center items-center;
+}
+.secondary-button-bg div {
+  @apply w-0 h-0 bg-cs-slate-900 rounded-full transition-all duration-700 group-hover:w-48 group-hover:h-48;
 }
 
 .logo {
