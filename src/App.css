@@ -44,7 +44,14 @@
 }
 
 .primary-button {
-	@apply relative overflow-hidden bg-cs-slate-900 text-white rounded-[8px] hover:bg-[#2F2F31] hover:text-text-primary transition-colors duration-300;
+	@apply relative 
+	overflow-hidden bg-cs-slate-900 
+	text-white 
+    dark:bg-black
+	rounded-[8px] 
+	hover:bg-[#2F2F31] 
+	hover:text-black
+	transition-colors duration-300;
 }
 
 .primary-button-link {
@@ -52,7 +59,7 @@
 }
 
 .primary-button-svg {
-	@apply text-white transition-colors duration-300 group-hover:text-text-primary;
+	@apply text-white dark:text-white transition-colors duration-300 group-hover:text-text-primary;
 }
 
 .primary-button-bg {

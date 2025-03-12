@@ -30,7 +30,7 @@ interface CustomStyle {
 //CustomStyles for the Chart
 
 const customStyleDefault: CustomStyle = {
-	bgStyleCustom: " bg-[#CCCBFC] dark:bg-[#2E2E8A]",
+	bgStyleCustom: " bg-[#CCCBFC] dark:bg-[#7e7cf8]",
 	textStyleCustom: "text-[#374151] font-normal text-sm pl-1",
 	valueStyleCustom: "text-[#374151]  text-sm",
 	hasIcon: false,
