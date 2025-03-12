@@ -3,13 +3,14 @@ import "./App.css";
 import { BubbleBackground } from "./components/BubbleBackground";
 import { ChartCard } from "./components/ChartCard";
 import TopChannelsCard from "./components/TopChannelsCard";
+import { ThemeProvider } from "./components/theme-provider";
 import { Button } from "./components/ui/button";
 import { RootLayout } from "./layouts/RootLayout/RootLayout";
 import { ChartType } from "./models/chart";
 
 function App() {
 	return (
-		<>
+		<ThemeProvider>
 			<RootLayout>
 				<BubbleBackground />
 				<div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-8 relative">
@@ -158,7 +159,7 @@ function App() {
 					</div>
 				</div>
 			</RootLayout>
-		</>
+		</ThemeProvider>
 	);
 }
 

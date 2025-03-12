@@ -127,7 +127,7 @@ export const ChartCard = ({ chartCardData }: ChartCardProps) => {
 								<div
 									// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 									key={index}
-									className="flex items-center justify-between gap-2 text-xs text-black"
+									className="flex items-center justify-between gap-2 text-xs text-foreground"
 								>
 									<span
 										className={`flex w-4 h-4 rounded-full ${colorsPieChart[index]}`}
