@@ -22,7 +22,7 @@ export default {
 				indigoCustom: "#6366F1",
 				violetCustom: "#8B5CF6",
 				purpleCustom: "#A855F7",
-				"text-primary": "#181818",
+				"text-primary": "hsl(var(--text-primary))",
 				background: "hsl(var(--background))",
 				foreground: "hsl(var(--foreground))",
 				card: {
