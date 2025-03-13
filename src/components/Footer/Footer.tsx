@@ -124,7 +124,7 @@ const Footer = () => {
 								Comuafor
 							</a>
 						</p>
-						<p className="text-sm text-[#60646C]">
+						<p className="text-sm text-cs-slate-800">
 							The best programming community in the world
 						</p>
 					</div>
