@@ -58,9 +58,24 @@ function TopChannelsCard() {
 					</SelectTrigger>
 					<SelectContent className="text-cs-slate-900">
 						<SelectGroup className="bg-background">
-							<SelectItem value="Last month">Last month</SelectItem>
-							<SelectItem value="Last 6 months">Last 3 months</SelectItem>
-							<SelectItem value="Last year">Last year</SelectItem>
+							<SelectItem
+								className="cursor-pointer focus:bg-slate-500"
+								value="Last month"
+							>
+								Last month
+							</SelectItem>
+							<SelectItem
+								className="cursor-pointer focus:bg-slate-500"
+								value="Last 6 months"
+							>
+								Last 3 months
+							</SelectItem>
+							<SelectItem
+								className="cursor-pointer focus:bg-slate-500"
+								value="Last year"
+							>
+								Last year
+							</SelectItem>
 						</SelectGroup>
 					</SelectContent>
 				</Select>
