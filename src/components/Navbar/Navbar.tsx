@@ -50,12 +50,9 @@ const Navbar = () => {
 				</ul>
 			</div>
 
-			<div className=" space-x-2 ">
-				<Button className="group primary-button">
-					<a
-						href="https://discord.com/invite/comuafor"
-						className="primary-button-link"
-					>
+			<div className="flex space-x-2 ">
+				<Button asChild variant="link" className="group">
+					<a href="https://discord.com/invite/comuafor">
 						{/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
 						<svg
 							viewBox="0 0 256 199"
@@ -72,10 +69,10 @@ const Navbar = () => {
 							/>
 						</svg>
 						<p>Join</p>
+						<div className="primary-button-bg">
+							<div />
+						</div>
 					</a>
-					<div className="primary-button-bg">
-						<div />
-					</div>
 				</Button>
 
 				<ModeToggle />

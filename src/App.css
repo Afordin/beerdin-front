@@ -47,48 +47,18 @@ html {
 	@apply right-0 group-hover:w-1/2;
 }
 
-.primary-button {
-	@apply relative 
-	overflow-hidden bg-cs-slate-900 
-	text-white 
-  dark:bg-white
-  dark:text-cs-slate-100
-	rounded-[8px] 
-	hover:bg-[#2F2F31] 
-	hover:text-black
-  dark:hover:text-white
-	transition-colors duration-300;
-}
-
-.primary-button-link {
-	@apply flex items-center space-x-2 relative z-10;
-}
-
-.primary-button-svg {
-	@apply text-white dark:text-white dark:text-cs-slate-100 transition-colors duration-300 group-hover:text-text-primary;
-}
-
 .primary-button-bg {
 	@apply absolute inset-0 flex justify-center items-center;
 }
 
 .primary-button-bg div {
-	@apply w-0 h-0 bg-white dark:bg-cs-slate-200 rounded-full transition-all duration-700 group-hover:w-48 group-hover:h-48;
-}
-.secondary-button {
-	@apply relative overflow-hidden bg-white dark:bg-cs-slate-200 text-cs-slate-900 dark:text-white rounded-[8px] hover:bg-[#F2F2F2] hover:text-white dark:hover:text-cs-slate-100 transition-colors duration-300 border border-cs-slate-900 dark:border-cs-slate-200;
-}
-.secondary-button-link {
-	@apply flex items-center space-x-2 relative z-10;
-}
-.secondary-button-svg {
-	@apply text-cs-slate-900 dark:text-cs-slate-100 transition-colors duration-300;
+	@apply w-0 h-0 bg-white dark:bg-black rounded-full transition-all duration-700 group-hover:w-48 group-hover:h-48 -z-50 -ml-2;
 }
 .secondary-button-bg {
 	@apply absolute inset-0 flex justify-center items-center;
 }
 .secondary-button-bg div {
-	@apply w-0 h-0 bg-cs-slate-900 rounded-full transition-all duration-700 group-hover:w-48 group-hover:h-48;
+	@apply w-0 h-0 bg-cs-slate-900 rounded-full transition-all duration-700 group-hover:w-48 group-hover:h-48 -z-50;
 }
 
 .logo {
