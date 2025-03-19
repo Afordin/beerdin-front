@@ -84,6 +84,7 @@ function App() {
 					</div>
 
 					<div className="col-span-1 lg:col-span-2 w-full mt-16">
+					<section id="messages">
 						<ChartCard
 							chartCardData={{
 								title: "Message count",
@@ -93,9 +94,12 @@ function App() {
 								chartType: ChartType.BarChart,
 							}}
 						/>
+						</section>
 					</div>
+					
 
 					<TopChannelsCard />
+					<section id="activity">
 					<ChartCard
 						chartCardData={{
 							title: "Peak hours",
@@ -105,7 +109,9 @@ function App() {
 							urlEndpoint: "test",
 						}}
 					/>
+					</section>
 
+					
 					<ChartCard
 						chartCardData={{
 							title: "User roles",
@@ -115,7 +121,10 @@ function App() {
 							urlEndpoint: "test",
 						}}
 					/>
+					
 
+
+					<section id="users">
 					<ChartCard
 						chartCardData={{
 							urlEndpoint: "test",
@@ -125,7 +134,9 @@ function App() {
 							chartType: ChartType.Table,
 						}}
 					/>
+	</section>
 
+	<section id="usage">
 					<ChartCard
 						chartCardData={{
 							title: "Top users",
@@ -135,6 +146,7 @@ function App() {
 							chartType: ChartType.BarChart,
 						}}
 					/>
+					</section>
 
 					<ChartCard
 						chartCardData={{
@@ -145,7 +157,11 @@ function App() {
 							chartType: ChartType.BarList,
 						}}
 					/>
+
+				
+
 					<div className="col-span-1 lg:col-span-2 w-full">
+					<section id="words">
 						<ChartCard
 							chartCardData={{
 								title: "Most used words",
@@ -155,6 +171,7 @@ function App() {
 								chartType: ChartType.BarChart,
 							}}
 						/>
+						</section>
 					</div>
 				</div>
 				<div className="absolute bottom-0 left-0 right-0 -z-50">
@@ -166,3 +183,4 @@ function App() {
 }
 
 export default App;
+
