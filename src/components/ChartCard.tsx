@@ -77,19 +77,19 @@ export const ChartCard = ({ chartCardData }: ChartCardProps) => {
 					<SelectContent className="text-cs-slate-900">
 						<SelectGroup className="bg-background">
 							<SelectItem
-								className="cursor-pointer focus:bg-slate-500"
+								className="cursor-pointer focus:bg-slate-200 dark:focus:bg-slate-500"
 								value="Last month"
 							>
 								Last month
 							</SelectItem>
 							<SelectItem
-								className="cursor-pointer focus:bg-slate-500"
+								className="cursor-pointer focus:bg-slate-200 dark:focus:bg-slate-500"
 								value="Last 6 months"
 							>
 								Last 3 months
 							</SelectItem>
 							<SelectItem
-								className="cursor-pointer focus:bg-slate-500"
+								className="cursor-pointer focus:bg-slate-200 dark:focus:bg-slate-500"
 								value="Last year"
 							>
 								Last year
