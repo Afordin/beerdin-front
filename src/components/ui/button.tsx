@@ -9,15 +9,17 @@ const buttonVariants = cva(
 		variants: {
 			variant: {
 				default:
-					"bg-primary text-primary-foreground shadow hover:bg-primary/90",
+					"relative overflow-hidden bg-cs-slate-900 text-white rounded-[8px] border border-cs-slate-900 hover:text-text-primary transition-colors duration-300 dark:bg-white dark:text-cs-slate-100 dark:border-cs-slate-200 dark:hover:text-white",
 				destructive:
 					"bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
 				outline:
 					"border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
 				secondary:
-					"bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
+					"relative overflow-hidden bg-white text-cs-slate-900 rounded-[8px] border border-cs-slate-900 hover:text-white transition-colors duration-300 dark:bg-black dark:text-white dark:border-cs-slate-200 dark:hover:text-cs-slate-100",
 				ghost: "hover:bg-accent hover:text-accent-foreground",
-				link: "text-primary underline-offset-4 hover:underline",
+				link: "relative overflow-hidden bg-cs-slate-900 text-white rounded-[8px] border border-cs-slate-900 hover:text-text-primary transition-colors duration-300 dark:bg-white dark:text-cs-slate-100 dark:border-cs-slate-200 dark:hover:text-white flex items-center relative z-10",
+				linkSecondary:
+					"relative overflow-hidden bg-white text-cs-slate-900 rounded-[8px] border border-cs-slate-900 hover:text-white transition-colors duration-300 dark:bg-black dark:text-white dark:border-cs-slate-200 dark:hover:text-cs-slate-100 z-10",
 			},
 			size: {
 				default: "h-9 px-4 py-2",

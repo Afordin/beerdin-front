@@ -29,11 +29,8 @@ function App() {
 						</p>
 
 						<div className="flex gap-4">
-							<Button className="group primary-button">
-								<a
-									href="https://discord.com/invite/comuafor"
-									className="primary-button-link"
-								>
+							<Button asChild variant="link" className="group">
+								<a href="https://discord.com/invite/comuafor">
 									{/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
 									<svg
 										viewBox="0 0 256 199"
@@ -50,23 +47,19 @@ function App() {
 										/>
 									</svg>
 									<p>Join Community</p>
+									<div className="primary-button-bg">
+										<div />
+									</div>
 								</a>
-								<div className="primary-button-bg">
-									<div />
-								</div>
 							</Button>
-							<Button className="group secondary-button">
-								<a
-									href="https://github.com/Afordin/beerdin-front"
-									className="secondary-button-link"
-								>
+							<Button asChild variant="linkSecondary" className="group">
+								<a href="https://github.com/Afordin/beerdin-front">
 									{/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										width="20"
 										height="22"
 										viewBox="0 0 18 20"
-										className="social-icon-svg"
 										fill="currentColor"
 									>
 										<path
@@ -75,43 +68,41 @@ function App() {
 										/>
 									</svg>
 									<p>Explore Code</p>
+									<div className="secondary-button-bg">
+										<div />
+									</div>
 								</a>
-								<div className="secondary-button-bg">
-									<div />
-								</div>
 							</Button>
 						</div>
 					</div>
 
 					<div className="col-span-1 lg:col-span-2 w-full mt-16">
-					<section id="messages">
-						<ChartCard
-							chartCardData={{
-								title: "Message count",
-								subTitle:
-									"Displays the number of messages sent on the server during a period of time. ",
-								urlEndpoint: "test",
-								chartType: ChartType.BarChart,
-							}}
-						/>
+						<section id="messages">
+							<ChartCard
+								chartCardData={{
+									title: "Message count",
+									subTitle:
+										"Displays the number of messages sent on the server during a period of time. ",
+									urlEndpoint: "test",
+									chartType: ChartType.BarChart,
+								}}
+							/>
 						</section>
 					</div>
-					
 
 					<TopChannelsCard />
 					<section id="activity">
-					<ChartCard
-						chartCardData={{
-							title: "Peak hours",
-							subTitle:
-								"It represents the times of the day when the server is most active.",
-							chartType: ChartType.LineChart,
-							urlEndpoint: "test",
-						}}
-					/>
+						<ChartCard
+							chartCardData={{
+								title: "Peak hours",
+								subTitle:
+									"It represents the times of the day when the server is most active.",
+								chartType: ChartType.LineChart,
+								urlEndpoint: "test",
+							}}
+						/>
 					</section>
 
-					
 					<ChartCard
 						chartCardData={{
 							title: "User roles",
@@ -121,31 +112,29 @@ function App() {
 							urlEndpoint: "test",
 						}}
 					/>
-					
-
 
 					<section id="users">
-					<ChartCard
-						chartCardData={{
-							urlEndpoint: "test",
-							title: "User leaderboard",
-							subTitle:
-								"Lists the most outstanding users according to their participation in the server.",
-							chartType: ChartType.Table,
-						}}
-					/>
-	</section>
+						<ChartCard
+							chartCardData={{
+								urlEndpoint: "test",
+								title: "User leaderboard",
+								subTitle:
+									"Lists the most outstanding users according to their participation in the server.",
+								chartType: ChartType.Table,
+							}}
+						/>
+					</section>
 
-	<section id="usage">
-					<ChartCard
-						chartCardData={{
-							title: "Top users",
-							subTitle:
-								"Displays the number of messages sent on the server during a period of time.",
-							urlEndpoint: "test",
-							chartType: ChartType.BarChart,
-						}}
-					/>
+					<section id="usage">
+						<ChartCard
+							chartCardData={{
+								title: "Top users",
+								subTitle:
+									"Displays the number of messages sent on the server during a period of time.",
+								urlEndpoint: "test",
+								chartType: ChartType.BarChart,
+							}}
+						/>
 					</section>
 
 					<ChartCard
@@ -158,19 +147,17 @@ function App() {
 						}}
 					/>
 
-				
-
 					<div className="col-span-1 lg:col-span-2 w-full">
-					<section id="words">
-						<ChartCard
-							chartCardData={{
-								title: "Most used words",
-								subTitle:
-									"Highlights the most mentioned words in the server messages.",
-								urlEndpoint: "test",
-								chartType: ChartType.BarChart,
-							}}
-						/>
+						<section id="words">
+							<ChartCard
+								chartCardData={{
+									title: "Most used words",
+									subTitle:
+										"Highlights the most mentioned words in the server messages.",
+									urlEndpoint: "test",
+									chartType: ChartType.BarChart,
+								}}
+							/>
 						</section>
 					</div>
 				</div>
@@ -183,4 +170,3 @@ function App() {
 }
 
 export default App;
-
