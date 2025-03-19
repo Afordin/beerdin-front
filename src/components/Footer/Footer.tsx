@@ -37,7 +37,7 @@ const Footer = () => {
 				<div className="flex flex-col md:flex-row justify-center items-center space-x-3">
 					<div className="flex flex-col items-center space-y-3 w-1/2">
 						<h3 className="text-xl font-semibold">Designers</h3>
-						<div className="group flex justify-center items-center -space-x-3 hover:space-x-0 w-full h-full flex-wrap">
+						<div className="group flex justify-center items-center -space-x-3 hover:space-x-0 w-auto h-full flex-wrap">
 							{!isLoading ? (
 								designers.map((designer) => (
 									<a
@@ -63,7 +63,7 @@ const Footer = () => {
 					</div>
 					<div className="flex flex-col items-center space-y-3 w-1/2">
 						<h3 className="text-xl font-semibold">Developers</h3>
-						<div className="group flex justify-center items-center -space-x-3 hover:space-x-0 w-full h-full flex-wrap">
+						<div className="group flex justify-center items-center -space-x-3 hover:space-x-0 w-auto h-full flex-wrap">
 							{!isLoading ? (
 								contributors.map((contributor) => (
 									<a
