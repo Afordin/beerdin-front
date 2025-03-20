@@ -28,8 +28,8 @@ function App() {
 							like never before!
 						</p>
 
-						<div className="flex gap-4">
-							<Button asChild variant="link" className="group">
+						<div className="flex flex-col gap-4 w-full gap-y-6 xl:flex-row justify-center">
+							<Button asChild variant="link" className="group py-5">
 								<a href="https://discord.com/invite/comuafor">
 									{/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
 									<svg
@@ -52,7 +52,7 @@ function App() {
 									</div>
 								</a>
 							</Button>
-							<Button asChild variant="linkSecondary" className="group">
+							<Button asChild variant="linkSecondary" className="group py-5">
 								<a href="https://github.com/Afordin/beerdin-front">
 									{/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
 									<svg
