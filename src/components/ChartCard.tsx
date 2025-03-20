@@ -174,7 +174,7 @@ export const ChartCard = ({ chartCardData }: ChartCardProps) => {
 				)}
 
 				{response && chartCardData.chartType === ChartType.Table && (
-					<div className="w-72 overflow-x-auto">
+					<div className="w-72 md:w-full overflow-x-auto">
 						<table className="divide-y divide-white w-full">
 							<thead>
 								<tr className=" text-center text-base font-medium text-cs-slate-900 ">
