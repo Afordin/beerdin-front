@@ -59,7 +59,7 @@ export const ChartCard = ({ chartCardData }: ChartCardProps) => {
 	}, [chartCardData.chartType]);
 
 	return (
-		<Card className=" flex flex-col rounded-lg p-12  ">
+		<Card className=" flex flex-col rounded-lg p-4 px-6 xl:p-12  ">
 			<CardHeader className="space-y-4 p-0">
 				<CardTitle className=" p-0 text-left text-primary-900 font-bold text-2xl leading-7 ">
 					{chartCardData.title}
@@ -174,54 +174,58 @@ export const ChartCard = ({ chartCardData }: ChartCardProps) => {
 				)}
 
 				{response && chartCardData.chartType === ChartType.Table && (
-					<table className=" divide-y divide-white  overflow-x-auto min-w-full">
-						<thead>
-							<tr className=" text-center text-base font-medium text-cs-slate-900 ">
-								<th scope="col" className="px-2 py-3 tracking-wider">
-									Ranking
-								</th>
-								<th scope="col" className="px-2 py-3 tracking-wider">
-									User
-								</th>
+					<div className="w-72 overflow-x-auto">
+						<table className="divide-y divide-white w-full">
+							<thead>
+								<tr className=" text-center text-base font-medium text-cs-slate-900 ">
+									<th scope="col" className="px-2 py-3 tracking-wider">
+										Ranking
+									</th>
+									<th scope="col" className="px-2 py-3 tracking-wider">
+										User
+									</th>
 
-								<th scope="col" className="px-2 py-3 tracking-wider">
-									Level
-								</th>
-								<th scope="col" className="px-2 py-3 tracking-wider">
-									Messages
-								</th>
-								<th scope="col" className="px-2 py-3 tracking-wider">
-									Reactions
-								</th>
-							</tr>
-						</thead>
-						<tbody className=" divide-y divide-white">
-							{(chartData as TableChart[]).map((data, index) => (
-								// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-								<tr className="text-cs-slate-800 text-sm" key={index}>
-									<td className="px-3 py-3 whitespace-nowrap">
-										{placeIcons[index] && (
-											<img
-												src={placeIcons[index]}
-												alt={`Place ${index + 1}`}
-												className="w-6 h-6"
-											/>
-										)}
-									</td>
-									<td className="px-2 py-3 whitespace-nowrap text-left">
-										{data.user}
-									</td>
-									<td className="px-2 py-3 whitespace-nowrap">{data.level}</td>
-									<td className="px-2 py-3 whitespace-nowrap">
-										{data.messages}
-									</td>
-									<td className="px-2 py-3 whitespace-nowrap">
-										{data.reactions}
-									</td>
+									<th scope="col" className="px-2 py-3 tracking-wider">
+										Level
+									</th>
+									<th scope="col" className="px-2 py-3 tracking-wider">
+										Messages
+									</th>
+									<th scope="col" className="px-2 py-3 tracking-wider">
+										Reactions
+									</th>
 								</tr>
-							))}
-						</tbody>
-					</table>
+							</thead>
+							<tbody className=" divide-y divide-white">
+								{(chartData as TableChart[]).map((data, index) => (
+									// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+									<tr className="text-cs-slate-800 text-sm" key={index}>
+										<td className="px-3 py-3 whitespace-nowrap">
+											{placeIcons[index] && (
+												<img
+													src={placeIcons[index]}
+													alt={`Place ${index + 1}`}
+													className="w-6 h-6"
+												/>
+											)}
+										</td>
+										<td className="px-2 py-3 whitespace-nowrap text-left">
+											{data.user}
+										</td>
+										<td className="px-2 py-3 whitespace-nowrap">
+											{data.level}
+										</td>
+										<td className="px-2 py-3 whitespace-nowrap">
+											{data.messages}
+										</td>
+										<td className="px-2 py-3 whitespace-nowrap">
+											{data.reactions}
+										</td>
+									</tr>
+								))}
+							</tbody>
+						</table>
+					</div>
 				)}
 			</CardContent>
 		</Card>
