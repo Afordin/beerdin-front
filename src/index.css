@@ -134,8 +134,38 @@
 		opacity: var(--gradient-opacity);
 		z-index: -1; /* Push background behind content */
 
-		@media (width >=768px) {
+		@media (width >= 768px) {
 			background-size: 20px;
 		}
 	}
+
+	#navbar-dialog {
+		transition:
+			opacity 300ms ease,
+			transform 300ms ease,
+			overlay 500ms ease allow-discrete,
+			display 300ms ease allow-discrete;
+		opacity: 0;
+		transform: translateY(1em);
+
+		&[open] {
+			opacity: 1;
+			transform: translateY(0);
+		}
+
+		@starting-style {
+			&[open] {
+				opacity: 0;
+				transform: translateY(-1em);
+			}
+
+			&[open]::backdrop {
+				background-color: hsl(0 0 0 / 0);
+			}
+		}
+	}
+}
+
+:is(html, body):has(#navbar-dialog[open]) {
+	overflow: hidden;
 }

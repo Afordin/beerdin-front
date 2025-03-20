@@ -7,7 +7,7 @@ function NavbarLinks({ className }: NavbarLinksProps) {
 
 	return (
 		<div className={className}>
-			<ul className="flex items-center space-x-3 text-cs-slate-800">
+			<ul className="flex flex-col xl:flex-row items-center gap-5 xl:gap-3 text-cs-slate-800">
 				{navItems.map((item) => (
 					<li key={item}>
 						<a

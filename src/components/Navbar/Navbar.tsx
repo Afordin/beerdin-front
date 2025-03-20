@@ -52,7 +52,7 @@ const Navbar = () => {
 
 			<Dialog openModal={open} closeModal={() => setOpen(false)}>
 				<NavbarLinks />
-				<NavbarButtons />
+				<NavbarButtons className="flex gap-4 justify-center" />
 			</Dialog>
 		</>
 	);
