@@ -1,3 +1,4 @@
+import { Menu } from "lucide-react";
 import { ModeToggle } from "../mode-toggle";
 import { Button } from "../ui/button";
 
@@ -5,7 +6,7 @@ const Navbar = () => {
 	const navItems = ["Messages", "Activity", "Users", "Usage", "Words"];
 
 	return (
-		<nav className="w-full mx-auto bg-background px-10 py-3 border border-cs-slate-300 rounded-full flex justify-between items-center z-50">
+		<nav className="w-full mx-auto bg-background px-6 md:px-10 py-3 border border-cs-slate-300 rounded-full flex justify-between items-center z-50">
 			<a
 				// biome-ignore lint/a11y/useValidAnchor: <explanation>
 				href="#"
@@ -32,7 +33,8 @@ const Navbar = () => {
 				</svg>
 				<p className="text-cs-slate-900 text-base font-semibold">Comuafor</p>
 			</a>
-			<div className="flex items-center space-x-3">
+
+			<div className="hidden xl:flex xl:items-center xl:space-x-3">
 				<ul className="flex items-center space-x-3 text-cs-slate-800">
 					{navItems.map((item) => (
 						<li key={item}>
@@ -50,7 +52,7 @@ const Navbar = () => {
 				</ul>
 			</div>
 
-			<div className="flex space-x-2 ">
+			<div className="hidden xl:flex xl:space-x-2 ">
 				<Button asChild variant="link" className="group">
 					<a href="https://discord.com/invite/comuafor">
 						{/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
@@ -77,6 +79,10 @@ const Navbar = () => {
 
 				<ModeToggle />
 			</div>
+
+			<button className="xl:hidden" type="button">
+				<Menu />
+			</button>
 		</nav>
 	);
 };
