@@ -31,11 +31,11 @@ const Footer = () => {
 	];
 
 	return (
-		<footer className="w-full pt-5 pb-10 px-16 bg-background border-t border-cs-slate-300 grid grid-rows-auto text-text-primary space-y-4 m-0">
-			<div className="w-full flex flex-col justify-center">
+		<footer className="w-full pt-5 pb-10 xl:px-16 bg-background border-t border-cs-slate-300 grid grid-rows-auto text-text-primary space-y-16 xl:space-y-4 m-0">
+			<div className="w-full flex flex-col justify-center space-y-8 xl:space-y-0">
 				<h2 className="text-2xl font-semibold">Who contributed</h2>
-				<div className="flex flex-col md:flex-row justify-center items-center space-x-3">
-					<div className="flex flex-col items-center space-y-3 w-1/2">
+				<div className="flex flex-col md:flex-row justify-center items-center xl:space-x-3 space-y-8 xl:space-y-0">
+					<div className="flex flex-col items-center space-y-3 xl:w-1/2">
 						<h3 className="text-xl font-semibold">Designers</h3>
 						<div className="group flex justify-center items-center -space-x-3 hover:space-x-0 w-auto h-full flex-wrap">
 							{!isLoading ? (
@@ -61,7 +61,7 @@ const Footer = () => {
 							)}
 						</div>
 					</div>
-					<div className="flex flex-col items-center space-y-3 w-1/2">
+					<div className="flex flex-col items-center space-y-3 xl:w-1/2">
 						<h3 className="text-xl font-semibold">Developers</h3>
 						<div className="group flex justify-center items-center -space-x-3 hover:space-x-0 w-auto h-full flex-wrap">
 							{!isLoading ? (
@@ -91,8 +91,8 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
-			<div className="w-full flex justify-between items-center h-fit">
-				<div className="flex justify-center items-center space-x-6">
+			<div className="w-full flex flex-col xl:flex-row justify-between items-center h-fit gap-y-7">
+				<div className="flex flex-col xl:flex-row justify-center items-center gap-x-6 gap-y-4 order-2 xl:order-none">
 					{/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
 					<svg
 						width="44"
@@ -111,7 +111,7 @@ const Footer = () => {
 							fill="currentColor"
 						/>
 					</svg>
-					<div className="flex flex-col text-left">
+					<div className="flex flex-col text-center xl:text-left">
 						<p className="text-base font-semibold">
 							Designed and developed by{" "}
 							<a
@@ -129,7 +129,7 @@ const Footer = () => {
 						</p>
 					</div>
 				</div>
-				<div className="flex justify-center items-center space-x-6">
+				<div className="flex justify-center items-center space-x-6 order-1 xl:order-none">
 					<div className="group social-icon">
 						<a
 							href="https://discord.com/invite/comuafor"
