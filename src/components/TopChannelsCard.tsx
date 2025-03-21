@@ -40,7 +40,7 @@ const chartData = [
 
 function TopChannelsCard() {
 	return (
-		<Card className="  rounded-lg p-12  ">
+		<Card className="  rounded-lg px-4 py-6 xl:p-12  ">
 			<CardHeader className="space-y-4 p-0">
 				<CardTitle className=" p-0 text-left text-primary-900 font-bold text-2xl leading-7 ">
 					Top Channels
