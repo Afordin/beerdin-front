@@ -110,6 +110,19 @@
 	}
 }
 
+@starting-style {
+	#navbar-dialog {
+		&[open] {
+			opacity: 0;
+			transform: translateY(-1em);
+		}
+
+		&[open]::backdrop {
+			background-color: hsl(0 0 0 / 0);
+		}
+	}
+}
+
 @layer utilities {
 	.custom-bg {
 		position: relative;
@@ -151,17 +164,6 @@
 		&[open] {
 			opacity: 1;
 			transform: translateY(0);
-		}
-
-		@starting-style {
-			&[open] {
-				opacity: 0;
-				transform: translateY(-1em);
-			}
-
-			&[open]::backdrop {
-				background-color: hsl(0 0 0 / 0);
-			}
 		}
 	}
 }

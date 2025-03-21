@@ -21,7 +21,7 @@ const Navbar = () => {
 						width="16"
 						height="20"
 						viewBox="0 0 196 256"
-						className="text-foreground"
+						className="text-cs-slate-900 -translate-y-1"
 						fill="currentColor"
 						xmlns="http://www.w3.org/2000/svg"
 					>
