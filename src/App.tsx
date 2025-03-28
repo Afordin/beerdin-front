@@ -1,6 +1,4 @@
 import "./App.css";
-
-import { Suspense } from "react";
 import { BubbleBackground } from "./components/BubbleBackground";
 import { ChartCard } from "./components/ChartCard";
 import TopChannelsCard from "./components/TopChannelsCard";
