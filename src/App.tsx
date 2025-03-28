@@ -1,10 +1,11 @@
 import "./App.css";
 
+import { Suspense } from "react";
 import { BubbleBackground } from "./components/BubbleBackground";
 import { ChartCard } from "./components/ChartCard";
 import TopChannelsCard from "./components/TopChannelsCard";
-import { ThemeProvider } from "./components/theme-provider";
 import { Button } from "./components/ui/button";
+import { ThemeProvider } from "./components/ui/theme-provider";
 import { RootLayout } from "./layouts/RootLayout/RootLayout";
 import { ChartType } from "./models/chart";
 
@@ -15,10 +16,7 @@ function App() {
 				<BubbleBackground />
 				<div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-8 relative">
 					<div className="col-span-1 lg:col-span-2 w-full flex flex-col justify-center items-center gap-7">
-						<h1
-							className="font-dmSans text-5xl xl:text-7xl font-bold text-cs-slate-900 tracking-wide
-"
-						>
+						<h1 className="font-dmSans text-5xl xl:text-7xl font-bold text-cs-slate-900 tracking-wide">
 							See amazing metrics.
 						</h1>
 						<p className="font-dmSans text-xl xl:text-2xl text-pretty">
