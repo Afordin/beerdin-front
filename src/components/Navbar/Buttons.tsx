@@ -1,5 +1,5 @@
-import { ModeToggle } from "../mode-toggle";
 import { Button } from "../ui/button";
+import { ModeToggle } from "../ui/mode-toggle";
 
 interface NavbarButtonsProps {
 	className?: string;
